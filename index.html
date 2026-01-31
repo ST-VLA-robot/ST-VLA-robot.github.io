@@ -49,9 +49,9 @@
     .hero-body { padding: 3rem 1.5rem; }
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
     
-    /* Caption 样式 */
-    .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; text-align: center; }
-    .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; text-align: justify; margin-left: auto; margin-right: auto; max-width: 95%; }
+    /* 通用 Caption 样式，默认两端对齐 */
+    .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
+    .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
     
     .content img { margin-bottom: 15px; }
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
@@ -115,7 +115,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <img src="./static/images/teaserv2.png" alt="ST-VLA Overview" style="width: 100%;">
-        <h2 class="subtitle teaser-caption">
+        <h2 class="subtitle teaser-caption" style="text-align: justify;">
           <strong>ST-VLM</strong>  bridges the semantic-physical gap via unified 3D-4D spatio-temporal representations.
           <strong>(Left)</strong> Existing 2D-based VLMs face geometric ambiguity and temporal inconsistency due to the semantic-physical mismatch. <strong>(Right)</strong> Our <strong>ST-VLA</strong> utilizes unified 3D-4D representations with explicit trajectories and smooth spatial masks, ensuring robust long-horizon manipulation.
         </h2>
@@ -160,7 +160,7 @@
         <h2 class="title is-3">The ST-VLA Pipeline</h2>
         <img src="./static/images/pipeline.png" alt="ST-VLA Pipeline" style="width: 100%; margin-bottom: 20px;">
         <div class="content has-text-justified">
-          <p class="figure-caption">
+          <p class="figure-caption" style="text-align: justify;">
             <strong>The ST-VLA Pipeline.</strong> Given a global instruction and an RGB-D observation, the high-level <strong>ST-VLM</strong> generates sub-instructions and 2D trajectories.
             These are lifted to 3D and fused with SAM2 masks to form a unified 3D-4D representation, which conditions the low-level 3D policy for continuous action execution. 
             Guidance is refreshed every H steps for replanning and robustness to disturbances.
@@ -176,7 +176,7 @@
           <h2 class="title is-3">ST-Human Dataset & Task Generation</h2>
           <img src="./static/images/data_vlm.png" alt="ST-Human Dataset" style="width: 100%; margin-bottom: 20px;">
           <div class="content has-text-justified">
-            <p class="figure-caption">
+            <p class="figure-caption" style="text-align: center;">
                Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation.
             </p>
           </div>
@@ -196,7 +196,7 @@
         
         <div class="has-text-centered" style="margin-bottom: 30px;">
            <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 100%;">
-           <p class="figure-caption" style="text-align: center;">
+           <p class="figure-caption" style="text-align: justify;">
              <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks.
            </p>
         </div>
@@ -218,15 +218,15 @@
           <h3 class="title is-4 has-text-centered">Quantitative Comparisons</h3>
           <div class="content has-text-centered">
             
-            <p class="figure-caption"><strong>VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong> Best results are bolded.</p>
+            <p class="figure-caption" style="text-align: center;"><strong>VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong> Best results are bolded.</p>
             <img src="./static/images/table1.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             <br><br>
 
-            <p class="figure-caption"><strong>Results on Simulated Robot Manipulation Tasks.</strong> Background colors highlight ST-VLA variants.</p>
+            <p class="figure-caption" style="text-align: center;"><strong>Results on Simulated Robot Manipulation Tasks.</strong> Background colors highlight ST-VLA variants.</p>
             <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             <br><br>
 
-            <p class="figure-caption">Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
+            <p class="figure-caption" style="text-align: justify;">Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
             <img src="./static/images/table3.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             
           </div>
