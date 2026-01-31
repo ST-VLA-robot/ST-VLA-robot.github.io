@@ -15,19 +15,18 @@
     body { font-family: 'Noto Sans', sans-serif; }
     .title { font-family: 'Google Sans', sans-serif; }
     
-    /* 调整了字体大小，确保第一行能完整显示 */
+    /* 标题样式：两行居中 */
     .publication-title { 
       font-size: 2.2rem; 
       font-weight: bold; 
       line-height: 1.3; 
     }
     
-    /* 针对小屏幕(手机)的特殊处理，防止手机上字太大 */
     @media screen and (max-width: 768px) {
       .publication-title { font-size: 1.6rem; }
     }
 
-    /* 自定义颜色样式 (仿 DeCo) */
+    /* 颜色样式 */
     .title-blue { color: #209cee; }
     .title-purple { color: #6f42c1; }
 
@@ -49,7 +48,11 @@
     .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
     .hero-body { padding: 3rem 1.5rem; }
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
-    .teaser-caption { font-size: 1rem; color: #666; margin-top: 10px; text-align: center; }
+    
+    /* Caption 样式 */
+    .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; text-align: center; }
+    .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; text-align: justify; margin-left: auto; margin-right: auto; max-width: 95%; }
+    
     .content img { margin-bottom: 15px; }
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
   </style>
@@ -112,9 +115,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <img src="./static/images/teaserv2.png" alt="ST-VLA Overview" style="width: 100%;">
-        <h2 class="subtitle has-text-centered teaser-caption">
-          Figure 1. <strong>ST-VLM</strong>  bridges the semantic-physical gap via unified 3D-4D representations.
-          <strong>(Left)</strong> Existing 2D-based VLMs face geometric ambiguity and temporal inconsistency due to the semantic-physical mismatch. <strong>(Right)</strong> Our <strong>ST-VLA</strong> utilizes explicit trajectories and smooth spatial masks to ensure robust long-horizon manipulation.
+        <h2 class="subtitle teaser-caption">
+          <strong>ST-VLM bridges the semantic-physical gap via unified 3D-4D spatio-temporal representations.</strong> 
+          (Left) Existing 2D-based VLMs face geometric ambiguity and temporal inconsistency due to the semantic-physical mismatch. (Right) [cite_start]Our ST-VLA utilizes unified 3D-4D representations with explicit trajectories and smooth spatial masks, ensuring robust long-horizon manipulation [cite: 99-101].
         </h2>
       </div>
     </div>
@@ -129,16 +132,19 @@
         <div class="content abstract-text">
           <p>
             Robotic manipulation in open-world environments requires reasoning across semantics, geometry, and long-horizon action dynamics. 
-            Existing Vision-Language-Action (VLA) frameworks typically use 2D representations but lack depth awareness and temporal consistency.
+            Existing Vision-Language-Action (VLA) frameworks typically use 2D representations to connect high-level reasoning with low-level control, but lack depth awareness and temporal consistency, limiting robustness in complex 3D scenes.
           </p>
           <p>
             We propose <strong>ST-VLA</strong>, a hierarchical VLA framework using a unified <strong>3D-4D representation</strong> to bridge perception and action. 
-            ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context.
-            To enable this, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 300k episodes and 4D supervision.
+            ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context, providing a stable interface between semantic reasoning and continuous control.
           </p>
           <p>
-            Experiments on RLBench and real-world tasks show that ST-VLA significantly outperforms state-of-the-art baselines, 
-            [cite_start]improving zero-shot success rates by <strong>44.6%</strong> [cite: 57-66].
+            To enable effective learning of such representations, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 14 tasks and 300k episodes, annotated with 2D, 3D, and 4D supervision via a semi-automated pipeline. Using ST-Human, we train ST-VLM, a spatio-temporal vision-language model that generates spatially grounded and temporally coherent 3D representations to guide policy execution.
+          </p>
+          <p>
+            The smooth spatial masks focus on task-relevant geometry and stabilize latent representations, enabling online replanning and long-horizon reasoning. 
+            Experiments on RLBench and real-world manipulation tasks show that ST-VLA significantly outperforms state-of-the-art baselines, improving zero-shot success rates by 44.6% and 30.3%. 
+            [cite_start]These results demonstrate that offloading spatio-temporal reasoning to VLMs with unified 3D-4D representations substantially improves robustness and generalization for open-world robotic manipulation [cite: 57-67].
           </p>
         </div>
       </div>
@@ -154,9 +160,10 @@
         <h2 class="title is-3">The ST-VLA Pipeline</h2>
         <img src="./static/images/pipeline.png" alt="ST-VLA Pipeline" style="width: 100%; margin-bottom: 20px;">
         <div class="content has-text-justified">
-          <p>
-            <strong>Figure 3.</strong> Given a global instruction and RGB-D observation, the high-level ST-VLM generates sub-instructions and 2D trajectories.
-            [cite_start]These are lifted to 3D and fused with SAM2 masks to form a unified 3D-4D representation, which conditions the low-level 3D policy for continuous action execution [cite: 348-349].
+          <p class="figure-caption">
+            <strong>The ST-VLA Pipeline.</strong> Given a global instruction and an RGB-D observation, the high-level ST-VLM generates sub-instructions and 2D trajectories.
+            These are lifted to 3D and fused with SAM2 masks to form a unified 3D-4D representation, which conditions the low-level 3D policy for continuous action execution. 
+            [cite_start]Guidance is refreshed every H steps for replanning and robustness to disturbances [cite: 348-350].
           </p>
         </div>
       </div>
@@ -169,8 +176,8 @@
           <h2 class="title is-3">ST-Human Dataset & Task Generation</h2>
           <img src="./static/images/data_vlm.png" alt="ST-Human Dataset" style="width: 100%; margin-bottom: 20px;">
           <div class="content has-text-justified">
-            <p>
-               <strong>Figure 2.</strong> Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation. We record ~300k episodes across 14 tasks with dense annotations for 2D/3D trajectories, spatial masks, and 4D temporal action evolution.
+            <p class="figure-caption">
+               [cite_start]<strong>Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation.</strong> [cite: 207]
             </p>
           </div>
         </div>
@@ -189,18 +196,16 @@
         <div class="columns is-centered is-vcentered">
             <div class="column is-6 has-text-centered">
                 <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 95%;">
-                <p class="is-size-7"><strong>Figure 4.</strong> Real-world setup & tasks.</p>
+                <p class="figure-caption" style="text-align: center;">
+                  <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) [cite_start]distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks [cite: 611-613].
+                </p>
             </div>
             <div class="column is-6 has-text-centered">
                 <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 95%;">
-                <p class="is-size-7"><strong>Figure 5.</strong> Zero-shot generalization results.</p>
+                <p class="figure-caption" style="text-align: center;">
+                  [cite_start]<strong>Real-world zero-shot generalization results.</strong> [cite: 689]
+                </p>
             </div>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            We evaluate ST-VLA on real-world tasks involving zero-shot generalization and long-horizon chaining. 
-            The results demonstrate significant improvements in handling unseen objects and distractors compared to baseline methods like 3DDA and 3DFA.
-          </p>
         </div>
       </div>
     </div>
@@ -212,15 +217,15 @@
           <h3 class="title is-4 has-text-centered">Quantitative Comparisons</h3>
           <div class="content has-text-centered">
             
-            <p><strong>Table 1: VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong></p>
+            [cite_start]<p class="figure-caption"><strong>VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong> Best results are bolded. [cite: 518]</p>
             <img src="./static/images/table1.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             <br><br>
 
-            <p><strong>Table 2: Results on Simulated Robot Manipulation Tasks (RLBench).</strong></p>
+            [cite_start]<p class="figure-caption"><strong>Results on Simulated Robot Manipulation Tasks.</strong> Background colors highlight ST-VLA variants. [cite: 533]</p>
             <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             <br><br>
 
-            <p><strong>Table 3: Success rates on long-horizon push-button tasks.</strong></p>
+            [cite_start]<p class="figure-caption"><strong>Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</strong> [cite: 577]</p>
             <img src="./static/images/table3.png" style="width: 80%; box-shadow: 0 0 10px #ccc;">
             
           </div>
@@ -255,4 +260,3 @@
 
 </body>
 </html>
-
