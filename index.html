@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation">
+  <meta name="keywords" content="VLA, Robotics, Embodied AI, 4D, Spatiotemporal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body { font-family: 'Noto Sans', sans-serif; }
+    .title { font-family: 'Google Sans', sans-serif; }
+    .publication-title { font-size: 2.5rem; font-weight: bold; }
+    .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 10px; }
+    .publication-links { margin-top: 20px; }
+    .link-block a { margin: 0 5px; }
+    .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
+    .hero-body { padding: 2rem 1.5rem; }
+    .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
+    .teaser-caption { font-size: 1rem; color: #666; margin-top: 10px; text-align: center; }
+    .results-carousel { margin-top: 20px; }
+    .content img { margin-bottom: 15px; } /* 让图片和文字保持距离 */
+    footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title publication-title">
+            ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding<br>
+            for General Robot Manipulation
+          </h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Anonymous Authors</span>
+            <br>
+            <span class="author-block" style="font-size: 0.9rem;">Under Review at ICML 2026</span>
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>Video</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming Soon)</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-database"></i></span>
+                <span>ST-Human Dataset</span>
+              </a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/teaserv2.png" alt="ST-VLA Overview" style="width: 100%;">
+        <h2 class="subtitle has-text-centered teaser-caption">
+          <strong>Figure 1. ST-VLM bridges the semantic-physical gap via unified 3D-4D representations.</strong> 
+          (Left) Existing 2D-based VLMs face geometric ambiguity. (Right) [cite_start]Our ST-VLA utilizes explicit trajectories and smooth spatial masks to ensure robust long-horizon manipulation [cite: 99-101].
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content abstract-text">
+          <p>
+            Robotic manipulation in open-world environments requires reasoning across semantics, geometry, and long-horizon action dynamics. 
+            Existing Vision-Language-Action (VLA) frameworks typically use 2D representations but lack depth awareness and temporal consistency.
+          </p>
+          <p>
+            We propose <strong>ST-VLA</strong>, a hierarchical VLA framework using a unified <strong>3D-4D representation</strong> to bridge perception and action. 
+            ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context.
+            To enable this, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 300k episodes and 4D supervision.
+          </p>
+          <p>
+            Experiments on RLBench and real-world tasks show that ST-VLA significantly outperforms state-of-the-art baselines, 
+            [cite_start]improving zero-shot success rates by <strong>44.6%</strong> [cite: 57-66].
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">The ST-VLA Pipeline</h2>
+        <img src="./static/images/pipeline.png" alt="ST-VLA Pipeline" style="width: 100%; margin-bottom: 20px;">
+        <div class="content has-text-justified">
+          <p>
+            <strong>Figure 3.</strong> Given a global instruction and RGB-D observation, the high-level ST-VLM generates sub-instructions and 2D trajectories.
+            [cite_start]These are lifted to 3D and fused with SAM2 masks to form a unified 3D-4D representation, which conditions the low-level 3D policy for continuous action execution [cite: 348-349].
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 30px; margin-bottom: 30px;">
+
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">ST-Human Dataset & Task Generation</h2>
+          <img src="./static/images/data_vlm.png" alt="ST-Human Dataset" style="width: 100%; margin-bottom: 20px;">
+          <div class="content has-text-justified">
+            <p>
+               <strong>Figure 2.</strong> Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation. [cite_start]We record ~300k episodes across 14 tasks with dense annotations for 2D/3D trajectories, spatial masks, and 4D temporal action evolution[cite: 207].
+            </p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments & Results</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Real-World Evaluation</h3>
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-6 has-text-centered">
+                <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 95%;">
+                [cite_start]<p class="is-size-7"><strong>Figure 4.</strong> Real-world setup & tasks[cite: 611].</p>
+            </div>
+            <div class="column is-6 has-text-centered">
+                <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 95%;">
+                [cite_start]<p class="is-size-7"><strong>Figure 5.</strong> Zero-shot generalization results[cite: 689].</p>
+            </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate ST-VLA on real-world tasks involving zero-shot generalization and long-horizon chaining. 
+            The results demonstrate significant improvements in handling unseen objects and distractors compared to baseline methods like 3DDA and 3DFA.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-4 has-text-centered">Quantitative Comparisons</h3>
+          <div class="content has-text-centered">
+            
+            <p><strong>Table 1: VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong></p>
+            <img src="./static/images/table1.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            <br><br>
+
+            <p><strong>Table 2: Results on Simulated Robot Manipulation Tasks (RLBench).</strong></p>
+             <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            <br><br>
+
+            <p><strong>Table 3: Success rates on long-horizon push-button tasks.</strong></p>
+             <img src="./static/images/table3.png" style="width: 80%; box-shadow: 0 0 10px #ccc;">
+            
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{stvla2026,
+  title={ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation},
+  author={Anonymous Authors},
+  journal={Under Review at ICML},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
