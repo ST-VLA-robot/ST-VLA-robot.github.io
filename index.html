@@ -14,16 +14,33 @@
   <style>
     body { font-family: 'Noto Sans', sans-serif; }
     .title { font-family: 'Google Sans', sans-serif; }
-    .publication-title { font-size: 2.5rem; font-weight: bold; }
-    .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 10px; }
+    .publication-title { font-size: 2.5rem; font-weight: bold; line-height: 1.2; }
+    
+    /* 自定义颜色样式 (仿 DeCo) */
+    .title-blue { color: #209cee; } /* 亮蓝色 */
+    .title-purple { color: #6f42c1; } /* 紫色 */
+
+    .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 15px; }
+    
+    /* 作者链接样式 */
+    .author-link {
+      color: #3273dc; /* 默认蓝色 */
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease; /* 平滑过渡效果 */
+    }
+    .author-link:hover {
+      color: #b5b5b5; /* 鼠标悬停变灰 */
+      cursor: pointer;
+    }
+
     .publication-links { margin-top: 20px; }
     .link-block a { margin: 0 5px; }
     .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
-    .hero-body { padding: 2rem 1.5rem; }
+    .hero-body { padding: 3rem 1.5rem; }
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
     .teaser-caption { font-size: 1rem; color: #666; margin-top: 10px; text-align: center; }
-    .results-carousel { margin-top: 20px; }
-    .content img { margin-bottom: 15px; } /* 让图片和文字保持距离 */
+    .content img { margin-bottom: 15px; }
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
   </style>
 </head>
@@ -35,15 +52,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
+          
           <h1 class="title publication-title">
-            ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding<br>
+            <span class="title-blue">S</span><span class="title-purple">T</span>-VLA: Enabling 4D-Aware <span class="title-blue">S</span>patio<span class="title-purple">t</span>emporal Understanding<br>
             for General Robot Manipulation
           </h1>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Anonymous Authors</span>
+            <span class="author-block">
+              <a class="author-link" href="#">Anonymous Authors</a>
+            </span>
             <br>
-            <span class="author-block" style="font-size: 0.9rem;">Under Review at ICML 2026</span>
+            <span class="author-block" style="font-size: 0.9rem; color: #666; margin-top: 5px; display: block;">Under Review at ICML 2026</span>
           </div>
 
           <div class="publication-links">
@@ -68,7 +88,7 @@
             <span class="link-block">
               <a href="#" class="button is-normal is-rounded is-dark">
                 <span class="icon"><i class="fas fa-database"></i></span>
-                <span>ST-Human Dataset</span>
+                <span>ST-Human Dataset (Coming Soon)</span>
               </a>
             </span>
           </div>
@@ -142,7 +162,7 @@
           <img src="./static/images/data_vlm.png" alt="ST-Human Dataset" style="width: 100%; margin-bottom: 20px;">
           <div class="content has-text-justified">
             <p>
-               <strong>Figure 2.</strong> Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation. [cite_start]We record ~300k episodes across 14 tasks with dense annotations for 2D/3D trajectories, spatial masks, and 4D temporal action evolution[cite: 207].
+               <strong>Figure 2.</strong> Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation. We record ~300k episodes across 14 tasks with dense annotations for 2D/3D trajectories, spatial masks, and 4D temporal action evolution.
             </p>
           </div>
         </div>
@@ -161,11 +181,11 @@
         <div class="columns is-centered is-vcentered">
             <div class="column is-6 has-text-centered">
                 <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 95%;">
-                [cite_start]<p class="is-size-7"><strong>Figure 4.</strong> Real-world setup & tasks[cite: 611].</p>
+                <p class="is-size-7"><strong>Figure 4.</strong> Real-world setup & tasks.</p>
             </div>
             <div class="column is-6 has-text-centered">
                 <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 95%;">
-                [cite_start]<p class="is-size-7"><strong>Figure 5.</strong> Zero-shot generalization results[cite: 689].</p>
+                <p class="is-size-7"><strong>Figure 5.</strong> Zero-shot generalization results.</p>
             </div>
         </div>
         <div class="content has-text-justified">
@@ -189,11 +209,11 @@
             <br><br>
 
             <p><strong>Table 2: Results on Simulated Robot Manipulation Tasks (RLBench).</strong></p>
-             <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             <br><br>
 
             <p><strong>Table 3: Success rates on long-horizon push-button tasks.</strong></p>
-             <img src="./static/images/table3.png" style="width: 80%; box-shadow: 0 0 10px #ccc;">
+            <img src="./static/images/table3.png" style="width: 80%; box-shadow: 0 0 10px #ccc;">
             
           </div>
         </div>
