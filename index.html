@@ -113,7 +113,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <img src="./static/images/teaserv2.png" alt="ST-VLA Overview" style="width: 100%;">
         <h2 class="subtitle teaser-caption">
           <strong>ST-VLM</strong>  bridges the semantic-physical gap via unified 3D-4D spatio-temporal representations.
@@ -193,27 +193,28 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h3 class="title is-4">Real-World Evaluation</h3>
-        <div class="columns is-centered is-vcentered">
-            <div class="column is-6 has-text-centered">
-                <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 95%;">
-                <p class="figure-caption" style="text-align: center;">
-                  <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks.
-                </p>
-            </div>
-            <div class="column is-6 has-text-centered">
-                <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 95%;">
-                <p class="figure-caption" style="text-align: center;">
-                  Real-world zero-shot generalization results.
-                </p>
-            </div>
+        
+        <div class="has-text-centered" style="margin-bottom: 30px;">
+           <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 100%;">
+           <p class="figure-caption" style="text-align: center;">
+             <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks.
+           </p>
         </div>
+
+        <div class="has-text-centered">
+           <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 100%;">
+           <p class="figure-caption" style="text-align: center;">
+             Real-world zero-shot generalization results.
+           </p>
+        </div>
+
       </div>
     </div>
 
-    <br>
+    <br><br>
 
     <div class="columns is-centered">
-        <div class="column is-four-fifths">
+        <div class="column is-full-width">
           <h3 class="title is-4 has-text-centered">Quantitative Comparisons</h3>
           <div class="content has-text-centered">
             
@@ -226,24 +227,12 @@
             <br><br>
 
             <p class="figure-caption">Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
-            <img src="./static/images/table3.png" style="width: 80%; box-shadow: 0 0 10px #ccc;">
+            <img src="./static/images/table3.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
             
           </div>
         </div>
       </div>
 
-  </div>
-</section>
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{stvla2026,
-  title={ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation},
-  author={Anonymous Authors},
-  journal={Under Review at ICML},
-  year={2026}
-}</code></pre>
   </div>
 </section>
 
@@ -260,5 +249,3 @@
 
 </body>
 </html>
-
-
