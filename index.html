@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+少显示了很多内容：分析这个网页代码，把标题里的ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding
+for General Robot Manipulation改成ST-VLA: Enabling 4D-Aware SpatioTemporal Understanding
+for General Robot Manipulation，并且把对应的颜色给出一点动图的效果:<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="description" content="ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation">
   <meta name="keywords" content="VLA, Robotics, Embodied AI, 4D, Spatiotemporal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ST-VLA: Enabling 4D-Aware SpatioTemporal Understanding for General Robot Manipulation</title>
+  <title>ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -14,14 +16,14 @@
   <style>
     body { font-family: 'Noto Sans', sans-serif; }
     .title { font-family: 'Google Sans', sans-serif; }
-
+    
     /* 标题样式 */
     .publication-title { 
       font-size: 2.2rem; 
       font-weight: bold; 
       line-height: 1.3; 
     }
-
+    
     @media screen and (max-width: 768px) {
       .publication-title { font-size: 1.6rem; }
     }
@@ -48,10 +50,11 @@
     .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
     .hero-body { padding: 3rem 1.5rem; }
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
-
+    
+    /* Caption 样式 */
     .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
     .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
-
+    
     .content img { margin-bottom: 15px; }
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
   </style>
@@ -66,7 +69,7 @@
         <div class="column has-text-centered">
           
           <h1 class="title publication-title">
-            <span class="title-blue">S</span><span class="title-purple">T</span>-VLA: Enabling 4D-Aware <span class="title-blue">S</span>patio<span class="title-purple">T</span>emporal Understanding<br>
+            <span class="title-blue">S</span><span class="title-purple">T</span>-VLA: Enabling 4D-Aware <span class="title-blue">S</span>patio<span class="title-purple">t</span>emporal Understanding<br>
             for General Robot Manipulation
           </h1>
           
@@ -123,7 +126,117 @@
   </div>
 </section>
 
-<!-- 其他内容保持不变 -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content abstract-text">
+          <p>
+            Robotic manipulation in open-world environments requires reasoning across semantics, geometry, and long-horizon action dynamics. 
+            Existing Vision-Language-Action (VLA) frameworks typically use 2D representations to connect high-level reasoning with low-level control, but lack depth awareness and temporal consistency, limiting robustness in complex 3D scenes.
+          </p>
+          <p>
+            We propose <strong>ST-VLA</strong>, a hierarchical VLA framework using a unified 3D-4D representation to bridge perception and action. 
+            ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context, providing a stable interface between semantic reasoning and continuous control.
+          </p>
+          <p>
+            To enable effective learning of such representations, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 14 tasks and 300k episodes, annotated with 2D, 3D, and 4D supervision via a semi-automated pipeline. Using ST-Human, we train <strong>ST-VLM</strong>, a spatio-temporal vision-language model that generates spatially grounded and temporally coherent 3D representations to guide policy execution.
+          </p>
+          <p>
+            The smooth spatial masks focus on task-relevant geometry and stabilize latent representations, enabling online replanning and long-horizon reasoning. 
+            Experiments on RLBench and real-world manipulation tasks show that ST-VLA significantly outperforms state-of-the-art baselines, improving zero-shot success rates by 44.6% and 30.3%. 
+            These results demonstrate that offloading spatio-temporal reasoning to VLMs with unified 3D-4D representations substantially improves robustness and generalization for open-world robotic manipulation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">The ST-VLA Pipeline</h2>
+        <img src="./static/images/pipeline.png" alt="ST-VLA Pipeline" style="width: 100%; margin-bottom: 20px;">
+        <div class="content has-text-justified">
+          <p class="figure-caption" style="text-align: justify;">
+            <strong>The ST-VLA Pipeline.</strong> Given a global instruction and an RGB-D observation, the high-level <strong>ST-VLM</strong> generates sub-instructions and 2D trajectories.
+            These are lifted to 3D and fused with SAM2 masks to form a unified 3D-4D representation, which conditions the low-level 3D policy for continuous action execution. 
+            Guidance is refreshed every H steps for replanning and robustness to disturbances.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 30px; margin-bottom: 30px;">
+
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">ST-Human Dataset & Task Generation</h2>
+          <img src="./static/images/data_vlm.png" alt="ST-Human Dataset" style="width: 100%; margin-bottom: 20px;">
+          <div class="content has-text-justified">
+            <p class="figure-caption" style="text-align: center;">
+               Overview of the ST-Human Dataset Construction and Unified 2D-3D-4D Task Generation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments & Results</h2>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Real-World Evaluation</h3>
+        
+        <div class="has-text-centered" style="margin-bottom: 30px;">
+           <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 100%;">
+           <p class="figure-caption" style="text-align: justify;">
+             <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks.
+           </p>
+        </div>
+
+        <div class="has-text-centered">
+           <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 100%;">
+           <p class="figure-caption" style="text-align: center;">
+             Real-world zero-shot generalization results.
+           </p>
+        </div>
+
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-4">Quantitative Comparisons</h3>
+          <div class="content has-text-centered">
+            
+            <p class="figure-caption" style="text-align: center;"><strong>VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong> Best results are bolded.</p>
+            <img src="./static/images/table1.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            <br><br>
+
+            <p class="figure-caption" style="text-align: center;"><strong>Results on Simulated Robot Manipulation Tasks.</strong> Background colors highlight ST-VLA variants.</p>
+            <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            <br><br>
+
+            <p class="figure-caption" style="text-align: justify;">Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
+            <img src="./static/images/table3.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
+            
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
