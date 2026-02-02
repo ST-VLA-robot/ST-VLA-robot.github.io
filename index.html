@@ -22,10 +22,12 @@
       100% { color: #209cee; } /* 蓝色 */
     }
 
+    /* 修改点1：加大标题字体，增加底部间距 */
     .publication-title { 
-      font-size: 2.2rem; 
+      font-size: 3rem; /* 原 2.2rem -> 3rem */
       font-weight: bold; 
-      line-height: 1.3; 
+      line-height: 1.2; 
+      margin-bottom: 25px; /* 增加标题下方的间距 */
     }
     
     /* 仅用于 S 和 T 的动画类 */
@@ -38,18 +40,24 @@
     .title-blue { color: #209cee; }
     .title-purple { color: #6f42c1; }
 
+    /* 修改点2：加大按钮区域的上边距 */
+    .publication-links { 
+      margin-top: 45px; /* 原 20px -> 45px */
+    }
+
+    .link-block a { margin: 0 5px; }
+
     /* --- 实验结果排版优化 (Result Cards) --- */
     .result-card {
       background: #ffffff;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 轻微阴影 */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
       border: 1px solid #eeeeee;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* 鼠标悬停时的效果 */
     .result-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
@@ -72,7 +80,8 @@
 
     /* --- 基础样式 --- */
     @media screen and (max-width: 768px) {
-      .publication-title { font-size: 1.6rem; }
+      /* 移动端字体也相应调大一点 */
+      .publication-title { font-size: 2rem; }
       .result-card { padding: 10px; }
     }
 
@@ -89,10 +98,8 @@
       cursor: pointer;
     }
 
-    .publication-links { margin-top: 20px; }
-    .link-block a { margin: 0 5px; }
     .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
-    .hero-body { padding: 3rem 1.5rem; }
+    .hero-body { padding: 4rem 1.5rem; } /* 稍微增加Hero区域的内边距 */
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
     
     .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
@@ -111,18 +118,20 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           
-          <!-- 标题修改：SpatioTemporal + S/T 动画 -->
+          <!-- 标题 (已放大字号) -->
           <h1 class="title publication-title">
             <span class="st-anim title-blue">S</span><span class="st-anim title-purple">T</span>-VLA: Enabling 4D-Aware <span class="st-anim title-blue">S</span>patio<span class="st-anim title-purple">T</span>emporal Understanding<br>
             for General Robot Manipulation
           </h1>
           
+          <!-- 作者栏 -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a class="author-link" href="#">Anonymous Authors</a>
             </span>
           </div>
 
+          <!-- 链接按钮 (已增加上边距) -->
           <div class="publication-links">
             <span class="link-block">
               <a href="#" class="button is-normal is-rounded is-dark">
@@ -179,9 +188,15 @@
           <p>
             Robotic manipulation in open-world environments requires reasoning across semantics, geometry, and long-horizon action dynamics. 
             Existing Vision-Language-Action (VLA) frameworks typically use 2D representations to connect high-level reasoning with low-level control, but lack depth awareness and temporal consistency, limiting robustness in complex 3D scenes.
+          </p>
+          <p>
             We propose <strong>ST-VLA</strong>, a hierarchical VLA framework using a unified 3D-4D representation to bridge perception and action. 
             ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context, providing a stable interface between semantic reasoning and continuous control.
+          </p>
+          <p>
             To enable effective learning of such representations, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 14 tasks and 300k episodes, annotated with 2D, 3D, and 4D supervision via a semi-automated pipeline. Using ST-Human, we train <strong>ST-VLM</strong>, a spatio-temporal vision-language model that generates spatially grounded and temporally coherent 3D representations to guide policy execution.
+          </p>
+          <p>
             The smooth spatial masks focus on task-relevant geometry and stabilize latent representations, enabling online replanning and long-horizon reasoning. 
             Experiments on RLBench and real-world manipulation tasks show that ST-VLA significantly outperforms state-of-the-art baselines, improving zero-shot success rates by 44.6% and 30.3%. 
             These results demonstrate that offloading spatio-temporal reasoning to VLMs with unified 3D-4D representations substantially improves robustness and generalization for open-world robotic manipulation.
@@ -278,7 +293,7 @@
         <div class="result-caption-box">
           <p class="result-caption-text"><strong>Table 3:</strong> Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
         </div>
-        <!-- 重点修改：限制宽度为 60% 并居中 -->
+        <!-- Table 3 保持缩小宽度并居中 -->
         <img src="./static/images/table3.png" style="width: 60%; display: block; margin: 0 auto;">
       </div>
       
@@ -299,4 +314,3 @@
 
 </body>
 </html>
-
