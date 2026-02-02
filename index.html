@@ -34,7 +34,7 @@
       animation: colorPulse 3s ease-in-out infinite;
     }
 
-    /* 静态颜色类 (用于非动画部分如果需要) */
+    /* 静态颜色类 */
     .title-blue { color: #209cee; }
     .title-purple { color: #6f42c1; }
 
@@ -284,7 +284,8 @@
         <div class="result-caption-box">
           <p class="result-caption-text"><strong>Table 3:</strong> Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
         </div>
-        <img src="./static/images/table3.png" style="width: 100%;">
+        <!-- 重点修改：限制宽度为 60% 并居中 -->
+        <img src="./static/images/table3.png" style="width: 60%; display: block; margin: 0 auto;">
       </div>
       
     </div>
