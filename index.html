@@ -1,52 +1,140 @@
-<style>
-  body { font-family: 'Noto Sans', sans-serif; }
-  .title { font-family: 'Google Sans', sans-serif; }
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation">
+  <meta name="keywords" content="VLA, Robotics, Embodied AI, 4D, Spatiotemporal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ST-VLA: Enabling 4D-Aware SpatioTemporal Understanding for General Robot Manipulation</title>
 
-  /* 动画：颜色渐变 */
-  @keyframes colorPulse {
-    0%   { color: #209cee; }
-    50%  { color: #6f42c1; }
-    100% { color: #209cee; }
-  }
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body { font-family: 'Noto Sans', sans-serif; }
+    .title { font-family: 'Google Sans', sans-serif; }
 
-  /* 只给 S 和 T 用的动画类 */
-  .animated-letter {
-    display: inline-block;
-    animation: colorPulse 2.5s ease-in-out infinite;
-  }
+    /* 标题样式 */
+    .publication-title { 
+      font-size: 2.2rem; 
+      font-weight: bold; 
+      line-height: 1.3; 
+    }
 
-  .publication-title { 
-    font-size: 2.2rem; 
-    font-weight: bold; 
-    line-height: 1.3; 
-  }
+    @media screen and (max-width: 768px) {
+      .publication-title { font-size: 1.6rem; }
+    }
 
-  @media screen and (max-width: 768px) {
-    .publication-title { font-size: 1.6rem; }
-  }
+    /* 颜色样式 */
+    .title-blue { color: #209cee; }
+    .title-purple { color: #6f42c1; }
 
-  .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 15px; }
+    .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 15px; }
+    
+    .author-link {
+      color: #3273dc;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .author-link:hover {
+      color: #b5b5b5;
+      cursor: pointer;
+    }
 
-  .author-link {
-    color: #3273dc;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .author-link:hover {
-    color: #b5b5b5;
-    cursor: pointer;
-  }
+    .publication-links { margin-top: 20px; }
+    .link-block a { margin: 0 5px; }
+    .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
+    .hero-body { padding: 3rem 1.5rem; }
+    .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
 
-  .publication-links { margin-top: 20px; }
-  .link-block a { margin: 0 5px; }
-  .abstract-text { font-size: 1.1rem; line-height: 1.6; text-align: justify; }
-  .hero-body { padding: 3rem 1.5rem; }
-  .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
+    .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
+    .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
 
-  .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
-  .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
+    .content img { margin-bottom: 15px; }
+    footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
+  </style>
+</head>
 
-  .content img { margin-bottom: 15px; }
-  footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
-</style>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          
+          <h1 class="title publication-title">
+            <span class="title-blue">S</span><span class="title-purple">T</span>-VLA: Enabling 4D-Aware <span class="title-blue">S</span>patio<span class="title-purple">T</span>emporal Understanding<br>
+            for General Robot Manipulation
+          </h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a class="author-link" href="#">Anonymous Authors</a>
+            </span>
+          </div>
+
+          <div class="publication-links">
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-youtube"></i></span>
+                <span>Video</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming Soon)</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#" class="button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-database"></i></span>
+                <span>ST-Human Dataset (Coming Soon)</span>
+              </a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <img src="./static/images/teaserv2.png" alt="ST-VLA Overview" style="width: 100%;">
+        <h2 class="subtitle teaser-caption" style="text-align: justify;">
+          <strong>ST-VLM</strong>  bridges the semantic-physical gap via unified 3D-4D spatio-temporal representations.
+          <strong>(Left)</strong> Existing 2D-based VLMs face geometric ambiguity and temporal inconsistency due to the semantic-physical mismatch. <strong>(Right)</strong> Our <strong>ST-VLA</strong> utilizes unified 3D-4D representations with explicit trajectories and smooth spatial masks, ensuring robust long-horizon manipulation.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 其他内容保持不变 -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
