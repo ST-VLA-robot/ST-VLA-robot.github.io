@@ -2,33 +2,79 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding for General Robot Manipulation">
+  <meta name="description" content="ST-VLA: Enabling 4D-Aware SpatioTemporal Understanding for General Robot Manipulation">
   <meta name="keywords" content="VLA, Robotics, Embodied AI, 4D, Spatiotemporal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ST-VLA: Enabling 4D-Aware Spatiotemporal Understanding</title>
+  <title>ST-VLA: Enabling 4D-Aware SpatioTemporal Understanding for General Robot Manipulation</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <style>
-    body { font-family: 'Noto Sans', sans-serif; }
+    body { font-family: 'Noto Sans', sans-serif; background-color: #fdfdfd; }
     .title { font-family: 'Google Sans', sans-serif; }
     
-    /* 标题样式 */
+    /* --- 标题动画与样式 --- */
+    @keyframes colorPulse {
+      0%   { color: #209cee; } /* 蓝色 */
+      50%  { color: #6f42c1; } /* 紫色 */
+      100% { color: #209cee; } /* 蓝色 */
+    }
+
     .publication-title { 
       font-size: 2.2rem; 
       font-weight: bold; 
       line-height: 1.3; 
     }
     
-    @media screen and (max-width: 768px) {
-      .publication-title { font-size: 1.6rem; }
+    /* 仅用于 S 和 T 的动画类 */
+    .st-anim {
+      display: inline-block;
+      animation: colorPulse 3s ease-in-out infinite;
     }
 
-    /* 颜色样式 */
+    /* 静态颜色类 (用于非动画部分如果需要) */
     .title-blue { color: #209cee; }
     .title-purple { color: #6f42c1; }
+
+    /* --- 实验结果排版优化 (Result Cards) --- */
+    .result-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 轻微阴影 */
+      border: 1px solid #eeeeee;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* 鼠标悬停时的效果 */
+    .result-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .result-caption-box {
+      background-color: #f5f5f5;
+      border-left: 4px solid #6f42c1;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-radius: 0 4px 4px 0;
+      text-align: left;
+    }
+
+    .result-caption-text {
+      font-size: 0.95rem;
+      color: #363636;
+      margin-bottom: 0 !important;
+    }
+
+    /* --- 基础样式 --- */
+    @media screen and (max-width: 768px) {
+      .publication-title { font-size: 1.6rem; }
+      .result-card { padding: 10px; }
+    }
 
     .publication-authors { font-size: 1.2rem; color: #4a4a4a; margin-top: 15px; }
     
@@ -49,11 +95,10 @@
     .hero-body { padding: 3rem 1.5rem; }
     .section-title { font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; color: #363636; }
     
-    /* Caption 样式 */
     .teaser-caption { font-size: 1rem; color: #4a4a4a; margin-top: 10px; }
     .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
     
-    .content img { margin-bottom: 15px; }
+    .content img { margin-bottom: 5px; }
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
   </style>
 </head>
@@ -66,8 +111,9 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           
+          <!-- 标题修改：SpatioTemporal + S/T 动画 -->
           <h1 class="title publication-title">
-            <span class="title-blue">S</span><span class="title-purple">T</span>-VLA: Enabling 4D-Aware <span class="title-blue">S</span>patio<span class="title-purple">t</span>emporal Understanding<br>
+            <span class="st-anim title-blue">S</span><span class="st-anim title-purple">T</span>-VLA: Enabling 4D-Aware <span class="st-anim title-blue">S</span>patio<span class="st-anim title-purple">T</span>emporal Understanding<br>
             for General Robot Manipulation
           </h1>
           
@@ -169,7 +215,7 @@
       </div>
     </div>
 
-    <hr style="margin-top: 30px; margin-bottom: 30px;">
+    <hr style="margin-top: 30px; margin-bottom: 30px; border-top: 1px solid #e1e1e1;">
 
     <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
@@ -188,51 +234,60 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Experiments & Results</h2>
+    <h2 class="title is-3 has-text-centered" style="margin-bottom: 40px;">Experiments & Results</h2>
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h3 class="title is-4">Real-World Evaluation</h3>
-        
-        <div class="has-text-centered" style="margin-bottom: 30px;">
-           <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 100%;">
-           <p class="figure-caption" style="text-align: justify;">
-             <strong>Real-world experimental evaluation of ST-VLA.</strong> Left: Franka Emika Panda hardware setup. Right: Qualitative results across three dimensions: (1) zero-shot generalization to unseen object categories and geometries; (2) distractor robustness under task-irrelevant visual clutter; and (3) long-horizon chaining via sequential execution of multiple placement tasks.
+    <!-- Real World Card -->
+    <div class="result-card">
+      <h3 class="title is-4 has-text-centered">Real-World Evaluation</h3>
+      
+      <div class="has-text-centered" style="margin-bottom: 20px;">
+         <div class="result-caption-box">
+           <p class="result-caption-text">
+             <strong>Setup & Tasks:</strong> (Left) Franka Emika Panda hardware setup. (Right) Qualitative results showing: (1) zero-shot generalization; (2) distractor robustness; (3) long-horizon chaining.
            </p>
-        </div>
+         </div>
+         <img src="./static/images/realworld.png" alt="Real World Setup" style="width: 100%; border-radius: 5px;">
+      </div>
 
-        <div class="has-text-centered">
-           <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 100%;">
-           <p class="figure-caption" style="text-align: center;">
-             Real-world zero-shot generalization results.
+      <div class="has-text-centered">
+         <div class="result-caption-box">
+           <p class="result-caption-text">
+             <strong>Performance:</strong> Real-world zero-shot generalization results.
            </p>
-        </div>
-
+         </div>
+         <img src="./static/images/realworld-result.png" alt="Real World Results" style="width: 100%; border-radius: 5px;">
       </div>
     </div>
 
-    <br><br>
-
-    <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h3 class="title is-4">Quantitative Comparisons</h3>
-          <div class="content has-text-centered">
-            
-            <p class="figure-caption" style="text-align: center;"><strong>VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks.</strong> Best results are bolded.</p>
-            <img src="./static/images/table1.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
-            <br><br>
-
-            <p class="figure-caption" style="text-align: center;"><strong>Results on Simulated Robot Manipulation Tasks.</strong> Background colors highlight ST-VLA variants.</p>
-            <img src="./static/images/table2.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
-            <br><br>
-
-            <p class="figure-caption" style="text-align: justify;">Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
-            <img src="./static/images/table3.png" style="width: 100%; box-shadow: 0 0 10px #ccc;">
-            
-          </div>
+    <h3 class="title is-4 has-text-centered" style="margin-top: 50px; margin-bottom: 30px;">Quantitative Comparisons</h3>
+    
+    <div class="content has-text-centered">
+      
+      <!-- Table 1 Card -->
+      <div class="result-card">
+        <div class="result-caption-box">
+          <p class="result-caption-text"><strong>Table 1:</strong> VLM Performance Comparison on Selected 2D, 3D, and 4D Benchmarks. Best results are bolded.</p>
         </div>
+        <img src="./static/images/table1.png" style="width: 100%;">
       </div>
 
+      <!-- Table 2 Card -->
+      <div class="result-card">
+        <div class="result-caption-box">
+          <p class="result-caption-text"><strong>Table 2:</strong> Results on Simulated Robot Manipulation Tasks. Background colors highlight ST-VLA variants.</p>
+        </div>
+        <img src="./static/images/table2.png" style="width: 100%;">
+      </div>
+
+      <!-- Table 3 Card -->
+      <div class="result-card">
+        <div class="result-caption-box">
+          <p class="result-caption-text"><strong>Table 3:</strong> Success rates on long-horizon push-button tasks across three seeds, evaluated ST-VLA(3DFA) on seen buttons and unseen multi-step sequences.</p>
+        </div>
+        <img src="./static/images/table3.png" style="width: 100%;">
+      </div>
+      
+    </div>
   </div>
 </section>
 
@@ -249,4 +304,3 @@
 
 </body>
 </html>
-
