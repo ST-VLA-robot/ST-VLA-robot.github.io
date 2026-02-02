@@ -188,15 +188,9 @@
           <p>
             Robotic manipulation in open-world environments requires reasoning across semantics, geometry, and long-horizon action dynamics. 
             Existing Vision-Language-Action (VLA) frameworks typically use 2D representations to connect high-level reasoning with low-level control, but lack depth awareness and temporal consistency, limiting robustness in complex 3D scenes.
-          </p>
-          <p>
             We propose <strong>ST-VLA</strong>, a hierarchical VLA framework using a unified 3D-4D representation to bridge perception and action. 
             ST-VLA converts 2D guidance into 3D trajectories and generates smooth spatial masks that capture 4D spatio-temporal context, providing a stable interface between semantic reasoning and continuous control.
-          </p>
-          <p>
             To enable effective learning of such representations, we introduce <strong>ST-Human</strong>, a large-scale human manipulation dataset with 14 tasks and 300k episodes, annotated with 2D, 3D, and 4D supervision via a semi-automated pipeline. Using ST-Human, we train <strong>ST-VLM</strong>, a spatio-temporal vision-language model that generates spatially grounded and temporally coherent 3D representations to guide policy execution.
-          </p>
-          <p>
             The smooth spatial masks focus on task-relevant geometry and stabilize latent representations, enabling online replanning and long-horizon reasoning. 
             Experiments on RLBench and real-world manipulation tasks show that ST-VLA significantly outperforms state-of-the-art baselines, improving zero-shot success rates by 44.6% and 30.3%. 
             These results demonstrate that offloading spatio-temporal reasoning to VLMs with unified 3D-4D representations substantially improves robustness and generalization for open-world robotic manipulation.
@@ -314,3 +308,4 @@
 
 </body>
 </html>
+
