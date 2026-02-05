@@ -1,0 +1,1838 @@
+[
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation19_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation19_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation19_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation18_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation18_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation18_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation18_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation9_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation9_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation16_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation16_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation17_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation19_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation4_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation8_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation8_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation17_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation10_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo3",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation10_demo3"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation4_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation4_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation4_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation4_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation8_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation7_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation16_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation16_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation16_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation16_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation18_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation18_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation11_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation10_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation10_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Multi-task/ST-VLA_w-_3DFA_Frozen/variation10_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation19_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation19_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation0_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation0_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation5_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation5_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation5_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation9_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation9_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation9_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation9_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation16_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation16_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation17_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation17_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation17_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation17_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo2",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation5_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo2",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation5_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation15_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation15_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation15_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation15_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation0_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation0_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo3",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation5_demo3"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo3",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation5_demo3"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation14_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation14_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation11_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation11_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation10_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation10_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_FT/variation14_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Multi-task/ST-VLA_w-_3DFA_Frozen/variation14_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation1_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation1_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation1_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation1_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo7",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo7"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo7",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo7"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation0_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation0_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation3_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation3_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation3_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo5",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo5"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo5",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo5"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo3",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation3_demo3"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation4_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation4_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation3_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation3_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation0_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation0_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation4_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation4_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo4",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo4"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo4",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo4"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation2_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation2_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation7_demo2"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation8_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation8_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation2_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation2_demo1"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo6",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo6"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation2_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo8",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_FT/variation6_demo8"
+  },
+  {
+    "mode": "Multi-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo8",
+    "folder": "./static/videos/demos/Put_Groceries/Multi-task/ST-VLA_w-_3DFA_Frozen/variation6_demo8"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation19_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation5_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation5_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation19_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation19_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation5_demo3",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation5_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation6_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation0_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation0_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation16_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation8_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation7_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation5_demo2",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation5_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation15_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation15_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation15_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation15_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation0_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation0_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation14_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo1",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation14_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation18_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation18_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Unseen",
+    "outcome": "Success",
+    "id": "variation18_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation18_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation2_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation2_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation2_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation11_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation11_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation10_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation10_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation7_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_FT/variation14_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Close Jar",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation14_demo0",
+    "folder": "./static/videos/demos/Close_Jar/Single-task/ST-VLA_w-_3DFA_Frozen/variation14_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation1_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation1_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation1_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation1_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo7",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation6_demo7"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo7",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo7"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation0_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation0_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation2_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation2_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation3_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation7_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation7_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation7_demo2",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation3_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation3_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo5",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation6_demo5"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo5",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo5"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo3",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation8_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo3",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation3_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo3",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation3_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation4_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation4_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation3_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation3_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation3_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation0_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation0_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation0_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation4_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation4_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation2_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation2_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo1",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo6",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo6"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation2_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation2_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation6_demo8",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_Frozen/variation6_demo8"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Put Groceries",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation6_demo0",
+    "folder": "./static/videos/demos/Put_Groceries/Single-task/ST-VLA_w-_3DFA_FT/variation6_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation19_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation19_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation19_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation18_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation18_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation18_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation18_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation10_demo3",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation10_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation10_demo3",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation10_demo3"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation9_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation9_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation9_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation9_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation16_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation16_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation17_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo2",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation16_demo2"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation8_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation8_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation8_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation4_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation4_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation17_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation17_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation16_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation16_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation16_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation19_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation19_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation4_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation4_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation4_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation8_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation8_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Unseen",
+    "outcome": "Failure",
+    "id": "variation17_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation17_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Failure",
+    "id": "variation10_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation10_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation7_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo1",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo1"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation11_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation11_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation10_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation10_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation10_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (FT)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_FT/variation7_demo0"
+  },
+  {
+    "mode": "Single-task",
+    "method": "ST-VLA w/ 3DFA (Frozen)",
+    "task": "Light Bulb In",
+    "seen": "Seen",
+    "outcome": "Success",
+    "id": "variation7_demo0",
+    "folder": "./static/videos/demos/Light_Bulb_In/Single-task/ST-VLA_w-_3DFA_Frozen/variation7_demo0"
+  }
+]
