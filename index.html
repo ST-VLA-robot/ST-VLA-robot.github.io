@@ -295,6 +295,274 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Simulation Demos</h2>
+        
+        <div class="content has-text-centered">
+          <p>
+            Select configurations below to compare <strong>3DFA (Baseline)</strong> with our <strong>ST-VLA</strong> models.
+          </p>
+          
+          <div class="columns is-multiline is-centered is-vcentered" style="margin-bottom: 20px;">
+            
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded">
+                  <select id="demo-mode">
+                    <option value="Multi-task">Multi-task</option>
+                    <option value="Single-task">Single-task</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <span class="icon is-small"><i class="fas fa-plus"></i></span>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded is-primary">
+                  <select id="demo-method">
+                    <option value="ST-VLA w/ 3DFA (FT)">ST-VLA w/ 3DFA (FT)</option>
+                    <option value="ST-VLA w/ 3DFA (Frozen)">ST-VLA w/ 3DFA (Frozen)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <span>evaluated on</span>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded">
+                  <select id="demo-task">
+                    <option value="Close Jar">Close Jar</option>
+                    <option value="Light Bulb In">Light Bulb In</option>
+                    <option value="Put Groceries">Put Groceries</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded">
+                  <select id="demo-seen">
+                    <option value="Seen">Seen</option>
+                    <option value="Unseen">Unseen</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded">
+                  <select id="demo-outcome">
+                    <option value="Success">Success</option>
+                    <option value="Failure">Failure</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="control">
+                <div class="select is-small is-rounded">
+                  <select id="demo-id">
+                    </select>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="columns is-centered" style="background: #fdfdfd; border-radius: 10px; border: 1px solid #eee; padding: 20px;">
+            
+            <div class="column is-5 has-text-centered">
+              <h4 class="title is-5">3DFA (Baseline)</h4>
+              <div class="columns is-gapless">
+                <div class="column is-6">
+                  <img id="vid-baseline-rgb" src="" style="width: 100%; border-radius: 4px;" alt="Baseline RGB">
+                  <p class="is-size-7">RGB</p>
+                </div>
+                <div class="column is-6">
+                  <img id="vid-baseline-depth" src="" style="width: 100%; border-radius: 4px;" alt="Baseline Depth">
+                  <p class="is-size-7">Depth</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-1 has-text-centered is-vcentered" style="display: flex; align-items: center; justify-content: center;">
+              <span class="icon is-large has-text-grey-light"><i class="fas fa-angle-right fa-2x"></i></span>
+            </div>
+
+            <div class="column is-5 has-text-centered">
+              <h4 class="title is-5" id="txt-ours-method">ST-VLA (Ours)</h4>
+              <div class="columns is-gapless">
+                <div class="column is-6">
+                  <img id="vid-ours-rgb" src="" style="width: 100%; border-radius: 4px;" alt="Ours RGB">
+                  <p class="is-size-7">RGB</p>
+                </div>
+                <div class="column is-6">
+                  <img id="vid-ours-depth" src="" style="width: 100%; border-radius: 4px;" alt="Ours Depth">
+                  <p class="is-size-7">Depth</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div id="demo-loading" class="is-size-7 has-text-grey" style="margin-top: 10px;">Loading demos...</div>
+          <div id="demo-error" class="is-size-7 has-text-danger" style="display:none; margin-top: 10px;">No video found for this configuration.</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let demoData = [];
+  
+  // Elements
+  const sels = {
+    mode: document.getElementById('demo-mode'),
+    method: document.getElementById('demo-method'),
+    task: document.getElementById('demo-task'),
+    seen: document.getElementById('demo-seen'),
+    outcome: document.getElementById('demo-outcome'),
+    id: document.getElementById('demo-id'),
+  };
+  
+  const vids = {
+    b_rgb: document.getElementById('vid-baseline-rgb'),
+    b_depth: document.getElementById('vid-baseline-depth'),
+    o_rgb: document.getElementById('vid-ours-rgb'),
+    o_depth: document.getElementById('vid-ours-depth'),
+  };
+  
+  const txtMethod = document.getElementById('txt-ours-method');
+  const loader = document.getElementById('demo-loading');
+  const errorMsg = document.getElementById('demo-error');
+
+  // Load JSON
+  fetch('./demos.json')
+    .then(response => response.json())
+    .then(data => {
+      demoData = data;
+      loader.style.display = 'none';
+      updateDropdowns(); // Init
+      updateVideo();     // Show first video
+    })
+    .catch(err => {
+      console.error("Failed to load demos.json", err);
+      loader.textContent = "Failed to load demo data.";
+    });
+
+  // Event Listeners
+  Object.values(sels).forEach(el => el.addEventListener('change', (e) => {
+    if (e.target === sels.id) {
+        updateVideo();
+    } else {
+        updateDropdowns(); // Re-filter IDs if other options change
+        updateVideo();
+    }
+  }));
+
+  function updateDropdowns() {
+    // Current selections
+    const curMode = sels.mode.value;
+    const curMethod = sels.method.value;
+    const curTask = sels.task.value;
+    const curSeen = sels.seen.value;
+    const curOutcome = sels.outcome.value;
+
+    // Filter data to find available Variations/Episodes for this config
+    const available = demoData.filter(d => 
+      d.mode === curMode && 
+      d.method === curMethod && 
+      d.task === curTask && 
+      d.seen === curSeen && 
+      d.outcome === curOutcome
+    );
+
+    // Save current ID to try and restore it
+    const curId = sels.id.value;
+
+    // Clear and Populate ID dropdown
+    sels.id.innerHTML = '';
+    if (available.length === 0) {
+        const opt = document.createElement('option');
+        opt.text = "None";
+        sels.id.add(opt);
+        sels.id.disabled = true;
+    } else {
+        sels.id.disabled = false;
+        // Sort IDs naturally
+        available.sort((a, b) => a.id.localeCompare(b.id, undefined, {numeric: true}));
+        
+        available.forEach(item => {
+            const opt = document.createElement('option');
+            opt.value = item.id;
+            opt.text = item.id.replace('_', ' '); // Make "variation0_demo0" -> "variation0 demo0"
+            sels.id.add(opt);
+        });
+        
+        // Try to keep selection
+        if (available.some(d => d.id === curId)) {
+            sels.id.value = curId;
+        } else {
+            sels.id.selectedIndex = 0;
+        }
+    }
+  }
+
+  function updateVideo() {
+    const curMode = sels.mode.value;
+    const curMethod = sels.method.value;
+    const curTask = sels.task.value;
+    const curSeen = sels.seen.value;
+    const curOutcome = sels.outcome.value;
+    const curId = sels.id.value;
+
+    // Find entry
+    const entry = demoData.find(d => 
+      d.mode === curMode && 
+      d.method === curMethod && 
+      d.task === curTask && 
+      d.seen === curSeen && 
+      d.outcome === curOutcome &&
+      d.id === curId
+    );
+
+    if (entry) {
+        // Set Sources (add timestamp to prevent caching issues if needed, strictly speaking not needed for static)
+        vids.b_rgb.src = entry.folder + "/baseline_rgb.gif";
+        vids.b_depth.src = entry.folder + "/baseline_depth.gif";
+        vids.o_rgb.src = entry.folder + "/ours_rgb.gif";
+        vids.o_depth.src = entry.folder + "/ours_depth.gif";
+        
+        // Update Title
+        txtMethod.innerText = curMethod;
+        txtMethod.className = curMethod.includes('FT') ? "title is-5 title-purple" : "title is-5 title-blue";
+
+        errorMsg.style.display = 'none';
+        vids.b_rgb.parentElement.parentElement.parentElement.parentElement.style.opacity = "1";
+    } else {
+        errorMsg.style.display = 'block';
+        vids.b_rgb.src = ""; // Clear
+        // Optional: fade out grid
+        vids.b_rgb.parentElement.parentElement.parentElement.parentElement.style.opacity = "0.5";
+    }
+  }
+</script>
+
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
@@ -308,4 +576,5 @@
 
 </body>
 </html>
+
 
