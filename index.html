@@ -417,7 +417,8 @@
 
 <script>
   let demoData = [];
-
+  
+  // Elements
   const sels = {
     mode: document.getElementById('demo-mode'),
     method: document.getElementById('demo-method'),
@@ -425,36 +426,38 @@
     seen: document.getElementById('demo-seen'),
     id: document.getElementById('demo-id'),
   };
-
+  
   const vids = {
     b_rgb: document.getElementById('vid-baseline-rgb'),
     b_depth: document.getElementById('vid-baseline-depth'),
     o_rgb: document.getElementById('vid-ours-rgb'),
     o_depth: document.getElementById('vid-ours-depth'),
   };
-
+  
   const tags = {
     baseline: document.getElementById('tag-baseline'),
     ours: document.getElementById('tag-ours')
   };
-
+  
   const txtMethod = document.getElementById('txt-ours-method');
   const loader = document.getElementById('demo-loading');
   const errorMsg = document.getElementById('demo-error');
 
+  // Load JSON
   fetch('./demos.json')
     .then(response => response.json())
     .then(data => {
       demoData = data;
-      loader.style.display = 'none';
-      updateDropdowns(); 
-      updateVideo();     
+      loader.textContent = "Select a configuration above."; // 初始状态不自动显示加载中，等选了再说
+      updateDropdowns(); // Init
+      updateVideo();     // Show first video
     })
     .catch(err => {
       console.error("Failed to load demos.json", err);
       loader.textContent = "Failed to load demo data.";
     });
 
+  // Event Listeners
   Object.values(sels).forEach(el => el.addEventListener('change', (e) => {
     if (e.target === sels.id) {
         updateVideo();
@@ -488,14 +491,14 @@
     } else {
         sels.id.disabled = false;
         available.sort((a, b) => a.id.localeCompare(b.id, undefined, {numeric: true}));
-
+        
         available.forEach(item => {
             const opt = document.createElement('option');
             opt.value = item.id;
             opt.text = item.id.replace('_', ' '); 
             sels.id.add(opt);
         });
-
+        
         if (available.some(d => d.id === curId)) {
             sels.id.value = curId;
         } else {
@@ -508,7 +511,7 @@
       element.innerText = outcome;
       element.classList.remove('is-success', 'is-danger', 'is-warning', 'is-light');
       element.classList.add('is-light'); 
-
+      
       if (outcome === 'Success') {
           element.classList.add('is-success'); 
       } else {
@@ -516,6 +519,17 @@
       }
   }
 
+  // --- 新增：预加载图片的辅助函数 ---
+  function preloadImage(url) {
+      return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => resolve(url);
+          img.onerror = () => reject(url);
+          img.src = url;
+      });
+  }
+
+  // --- 修改：异步更新视频函数 ---
   function updateVideo() {
     const curMode = sels.mode.value;
     const curMethod = sels.method.value;
@@ -532,25 +546,63 @@
     );
 
     if (entry) {
-        vids.b_rgb.src = entry.folder + "/baseline_rgb.gif";
-        vids.b_depth.src = entry.folder + "/baseline_depth.gif";
-        vids.o_rgb.src = entry.folder + "/ours_rgb.gif";
-        vids.o_depth.src = entry.folder + "/ours_depth.gif";
+        // 1. 准备新地址
+        const src_b_rgb = entry.folder + "/baseline_rgb.gif";
+        const src_b_depth = entry.folder + "/baseline_depth.gif";
+        const src_o_rgb = entry.folder + "/ours_rgb.gif";
+        const src_o_depth = entry.folder + "/ours_depth.gif";
 
-        txtMethod.innerText = curMethod;
-        txtMethod.className = curMethod.includes('FT') ? "title is-5 title-purple" : "title is-5 title-blue";
+        // 2. 显示“加载中”，并把旧图片变透明（避免闪烁）
+        loader.style.display = 'block';
+        loader.textContent = "Loading synchronized demos...";
+        
+        // 可选：把视频区域变淡，表示正在加载
+        const grid = vids.b_rgb.parentElement.parentElement.parentElement.parentElement;
+        grid.style.opacity = "0.3"; 
+        
+        // 3. 开始并行预加载所有4张图
+        Promise.all([
+            preloadImage(src_b_rgb),
+            preloadImage(src_b_depth),
+            preloadImage(src_o_rgb),
+            preloadImage(src_o_depth)
+        ]).then(() => {
+            // 4. 所有图下载完了！现在同时赋值，它们会同时开始播放
+            vids.b_rgb.src = src_b_rgb;
+            vids.b_depth.src = src_b_depth;
+            vids.o_rgb.src = src_o_rgb;
+            vids.o_depth.src = src_o_depth;
 
-        updateStatusTag(tags.baseline, entry.outcome_baseline);
-        updateStatusTag(tags.ours, entry.outcome_ours);
+            // 更新文字和标签
+            txtMethod.innerText = curMethod;
+            txtMethod.className = curMethod.includes('FT') ? "title is-5 title-purple" : "title is-5 title-blue";
+            updateStatusTag(tags.baseline, entry.outcome_baseline);
+            updateStatusTag(tags.ours, entry.outcome_ours);
+            
+            errorMsg.style.display = 'none';
+            
+            // 5. 恢复显示
+            loader.style.display = 'none';
+            grid.style.opacity = "1";
 
-        errorMsg.style.display = 'none';
-        vids.b_rgb.parentElement.parentElement.parentElement.parentElement.style.opacity = "1";
+        }).catch((err) => {
+            console.error("Image load failed", err);
+            loader.textContent = "Error loading images.";
+        });
+
     } else {
         errorMsg.style.display = 'block';
+        // 清空 src 防止显示错误的旧图
         vids.b_rgb.src = ""; 
-        vids.b_rgb.parentElement.parentElement.parentElement.parentElement.style.opacity = "0.5";
+        vids.b_depth.src = ""; 
+        vids.o_rgb.src = ""; 
+        vids.o_depth.src = "";
+        
+        const grid = vids.b_rgb.parentElement.parentElement.parentElement.parentElement;
+        grid.style.opacity = "0.5";
         tags.baseline.innerText = "-";
         tags.ours.innerText = "-";
+        loader.style.display = 'none';
     }
   }
 </script>
