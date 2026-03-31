@@ -106,6 +106,45 @@
     .figure-caption { font-size: 0.95rem; color: #4a4a4a; margin-top: 10px; margin-left: auto; margin-right: auto; max-width: 95%; }
     
     .content img { margin-bottom: 5px; }
+
+    /* --- Visualization Experiment --- */
+    .viz-card {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid #eeeeee;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+    }
+
+    .viz-image-wrap {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .viz-main-image {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e9e9e9;
+      display: block;
+    }
+
+    .viz-legend {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 18%;
+      max-width: 170px;
+      min-width: 90px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.9);
+      pointer-events: none;
+    }
+
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
   </style>
 </head>
@@ -159,6 +198,52 @@
             </span>
           </div>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered" style="margin-bottom: 24px;">Visualization Experiment</h2>
+
+    <div class="viz-card">
+      <div class="columns is-multiline is-centered is-vcentered" style="margin-bottom: 16px;">
+        <div class="column is-narrow">
+          <div class="control">
+            <div class="select is-small is-rounded">
+              <select id="viz-task">
+                <option value="close-jar">close jar</option>
+                <option value="light-hub-in">light hub in</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-narrow">
+          <span class="icon is-small"><i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <div class="column is-narrow">
+          <div class="control">
+            <div class="select is-small is-rounded">
+              <select id="viz-step">
+                <option value="1">step 1</option>
+                <option value="2">step 2</option>
+                <option value="3">step 3</option>
+                <option value="4">step 4</option>
+                <option value="5">step 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="has-text-centered">
+        <div class="viz-image-wrap">
+          <img id="viz-main" class="viz-main-image" src="./static/images/close+light/viz_multi_variation3_demo0/variation3_demo0_multi_step0.png" alt="Visualization result">
+          <img class="viz-legend" src="./static/images/close+light/legend_model.jpg" alt="Legend">
         </div>
       </div>
     </div>
@@ -497,6 +582,18 @@
 
 <script>
   let demoData = [];
+
+  // Visualization experiment map
+  const vizTaskToPrefix = {
+    'close-jar': {
+      folder: './static/images/close+light/viz_multi_variation3_demo0',
+      filePrefix: 'variation3_demo0_multi_step'
+    },
+    'light-hub-in': {
+      folder: './static/images/close+light/viz_multi_variation16_demo2',
+      filePrefix: 'variation16_demo2_multi_step'
+    }
+  };
   
   // Elements
   const sels = {
@@ -522,6 +619,23 @@
   const txtMethod = document.getElementById('txt-ours-method');
   const loader = document.getElementById('demo-loading');
   const errorMsg = document.getElementById('demo-error');
+
+  const vizEls = {
+    task: document.getElementById('viz-task'),
+    step: document.getElementById('viz-step'),
+    main: document.getElementById('viz-main')
+  };
+
+  function updateVizImage() {
+    const taskCfg = vizTaskToPrefix[vizEls.task.value];
+    const stepIndex = Number(vizEls.step.value) - 1;
+    const imgPath = taskCfg.folder + '/' + taskCfg.filePrefix + stepIndex + '.png';
+    vizEls.main.src = imgPath;
+  }
+
+  vizEls.task.addEventListener('change', updateVizImage);
+  vizEls.step.addEventListener('change', updateVizImage);
+  updateVizImage();
 
   // Load JSON
   fetch('./demos.json')
