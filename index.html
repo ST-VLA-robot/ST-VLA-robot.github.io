@@ -132,29 +132,24 @@
     }
 
     .viz-legend {
-      width: 14%;
-      max-width: 135px;
-      min-width: 78px;
+      width: 36%;
+      max-width: 340px;
+      min-width: 180px;
       border-radius: 6px;
       border: 1px solid rgba(255, 255, 255, 0.8);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       background: rgba(255, 255, 255, 0.9);
     }
 
-    .viz-legend-floating {
-      position: absolute;
-      left: 35%;
-      bottom: 14px;
-      transform: translateX(-50%);
-      pointer-events: none;
+    .viz-legend-below {
+      display: block;
+      margin: 12px auto 0;
     }
 
     @media screen and (max-width: 768px) {
-      .viz-legend-floating {
-        position: static;
-        margin: 10px auto 0;
-        transform: none;
-        display: block;
+      .viz-legend {
+        width: 58%;
+        min-width: 140px;
       }
     }
 
@@ -256,8 +251,8 @@
       <div class="has-text-centered">
         <div class="viz-image-wrap">
           <img id="viz-main" class="viz-main-image" src="./static/images/close+light/viz_multi_variation3_demo0/variation3_demo0_multi_step0.png" alt="Visualization result">
-          <img class="viz-legend viz-legend-floating" src="./static/images/close+light/legend_model.jpg" alt="Legend">
         </div>
+        <img class="viz-legend viz-legend-below" src="./static/images/close+light/legend_model.jpg" alt="Legend">
       </div>
     </div>
   </div>
