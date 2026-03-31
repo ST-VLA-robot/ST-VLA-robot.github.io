@@ -117,7 +117,6 @@
     }
 
     .viz-image-wrap {
-      position: relative;
       display: inline-block;
       width: 100%;
       max-width: 920px;
@@ -132,17 +131,30 @@
     }
 
     .viz-legend {
-      position: absolute;
-      right: 14px;
-      bottom: 14px;
-      width: 18%;
-      max-width: 170px;
-      min-width: 90px;
+      width: 14%;
+      max-width: 135px;
+      min-width: 78px;
       border-radius: 6px;
       border: 1px solid rgba(255, 255, 255, 0.8);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       background: rgba(255, 255, 255, 0.9);
+    }
+
+    .viz-legend-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
       pointer-events: none;
+    }
+
+    .viz-legend-row .viz-legend {
+      transform: translateX(-28%);
+    }
+
+    @media screen and (max-width: 768px) {
+      .viz-legend-row .viz-legend {
+        transform: translateX(0);
+      }
     }
 
     footer { padding: 2rem 0; background-color: #fafafa; margin-top: 3rem; }
@@ -243,6 +255,8 @@
       <div class="has-text-centered">
         <div class="viz-image-wrap">
           <img id="viz-main" class="viz-main-image" src="./static/images/close+light/viz_multi_variation3_demo0/variation3_demo0_multi_step0.png" alt="Visualization result">
+        </div>
+        <div class="viz-legend-row">
           <img class="viz-legend" src="./static/images/close+light/legend_model.jpg" alt="Legend">
         </div>
       </div>
